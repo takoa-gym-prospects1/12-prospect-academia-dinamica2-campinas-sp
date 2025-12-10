@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+
 import { Content } from '../../content/Content';
 import {
     Section, Overlay, ContentWrapper,
-    HeroTitle, HeroSubtitle, MicroTextWrapper
+    HeroTitle, HeroSubtitle, MicroTextWrapper, HeroButton
 } from './Hero.styles';
 
 const Hero: React.FC = () => {
@@ -35,23 +35,15 @@ const Hero: React.FC = () => {
                         </HeroSubtitle>
                     )}
 
-                    <motion.a
+                    <HeroButton
                         href="#pricing"
                         className="btn btn-primary"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        style={{
-                            padding: '15px 40px',
-                            fontSize: '16px',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '10px',
-                            textTransform: 'uppercase'
-                        }}
                     >
                         {buttonText} { /* Removed Icon strictly, but can add back if needed */}
-                    </motion.a>
+                    </HeroButton>
 
                     {microText && (
                         <MicroTextWrapper

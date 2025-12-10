@@ -75,6 +75,22 @@ export const HeroTitle = styled(motion.h2)`
 
     @media (max-width: 768px) {
         font-size: 45px;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+`;
+
+export const HeroButton = styled(motion.a)`
+    padding: 15px 40px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        opacity: 1 !important;
+        transform: none !important;
     }
 `;
 
@@ -90,6 +106,8 @@ export const HeroSubtitle = styled(motion.p)`
 
     @media (max-width: 768px) {
         font-size: 16px;
+        opacity: 1 !important;
+        transform: none !important;
     }
 `;
 
@@ -107,5 +125,9 @@ export const MicroTextWrapper = styled(motion.div)`
         display: flex;
         align-items: center;
         gap: 5px;
+    }
+    @media (max-width: 768px) {
+        opacity: 1 !important;
+        transform: none !important;
     }
 `;
