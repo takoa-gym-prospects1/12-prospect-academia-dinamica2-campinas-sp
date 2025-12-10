@@ -12,6 +12,10 @@ const Section = styled.section<{ $bgImage: string }>`
     background-position: center;
     position: relative;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+    }
 `;
 
 const Overlay = styled.div`

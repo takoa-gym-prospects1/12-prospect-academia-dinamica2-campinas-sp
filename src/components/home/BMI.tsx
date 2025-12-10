@@ -3,13 +3,20 @@ import styled from 'styled-components';
 import { Content } from '../../content/Content';
 
 // Styled Components
-const Section = styled.section<{ $bgImage: string }>`
+const Section = styled.section<{ $bgImage: string; $mobileBgImage?: string }>`
     padding: 100px 0;
     background-image: url(${props => props.$bgImage});
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+        background-image: ${props => props.$mobileBgImage ? `url(${props.$mobileBgImage})` : `url(${props.$bgImage})`};
+        background-position: center top;
+    }
 `;
 
 const Overlay = styled.div`
@@ -18,6 +25,16 @@ const Overlay = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+    /* 
+     * AJUSTE DO OVERLAY (Camada escura sobre a imagem de fundo)
+     * 
+     * Para ajustar a intensidade do escurecimento, altere o último número do rgba:
+     * - rgba(0, 0, 0, 0.8) = 80% opaco (mais escuro)
+     * - rgba(0, 0, 0, 0.5) = 50% opaco (meio termo)
+     * - rgba(0, 0, 0, 0.3) = 30% opaco (mais claro, imagem mais visível)
+     * 
+     * O valor vai de 0.0 (transparente/sem escurecimento) até 1.0 (preto sólido)
+     */
     background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 `;
@@ -250,7 +267,7 @@ const BMI: React.FC = () => {
     const [status, setStatus] = useState<string>('');
 
     const { contact } = Content;
-    const { backgroundImage, tableTitle, formTitle, description, resultTitle, resultText, buttonText } = Content.bmi;
+    const { backgroundImage, mobileBackgroundImage, tableTitle, formTitle, description, resultTitle, resultText, buttonText } = Content.bmi;
 
     const calculateBMI = (e: React.FormEvent) => {
         e.preventDefault();
@@ -274,7 +291,7 @@ const BMI: React.FC = () => {
     };
 
     return (
-        <Section $bgImage={backgroundImage} id="bmi">
+        <Section $bgImage={backgroundImage} $mobileBgImage={mobileBackgroundImage} id="bmi">
             <Overlay />
             <Container>
                 <ContentWrapper>

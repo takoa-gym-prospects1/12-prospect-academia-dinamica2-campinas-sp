@@ -45,6 +45,10 @@ const AssetImages = {
         background: {
             src: "/images/bmi-bg.webp",
             dim: "1920x1080 (Ou recorte lateral) - Foco no lado direito"
+        },
+        mobileBackground: {
+            src: "/images/bmi-bg-mobile.webp",
+            dim: "750x1600+ (Retrato Longo) - A seção é muito alta no mobile, use uma imagem alongada."
         }
     },
 
@@ -282,6 +286,7 @@ export const Content = {
     bmi: {
         enabled: true,
         backgroundImage: AssetImages.bmi.background.src,
+        mobileBackgroundImage: AssetImages.bmi.mobileBackground.src, // Altere para a imagem mobile desejada
         tableTitle: {
             line1: "Tabela",
             highlight: "IMC"

@@ -9,6 +9,10 @@ const Section = styled.section<{ $bgImage: string }>`
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+    }
     position: relative;
 `;
 
