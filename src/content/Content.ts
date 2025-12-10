@@ -47,11 +47,7 @@ const AssetImages = {
             dim: "1920x1080 (Ou recorte lateral) - Foco no lado direito"
         }
     },
-    shop: {
-        product1: { src: "/images/shop-1.webp", dim: "500x500 - Quadrada" },
-        product2: { src: "/images/shop-2.webp", dim: "500x500 - Quadrada" },
-        product3: { src: "/images/shop-3.webp", dim: "500x500 - Quadrada" }
-    },
+
     testimonials: {
         background: {
             src: "/images/testimonials-bg.webp",
@@ -300,15 +296,7 @@ export const Content = {
         buttonText: "Agendar Avaliação Física Gratuita"
     },
 
-    shop: {
-        enabled: false, // DESABILITADO
-        title: {
-            line1: "Loja",
-            highlight: "Fitness"
-        },
-        subtitle: "Tudo o que você precisa para complementar seus treinos.",
-        products: []
-    },
+
 
     testimonials: {
         enabled: true,

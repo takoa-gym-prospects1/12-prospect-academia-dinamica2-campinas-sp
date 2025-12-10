@@ -9,7 +9,6 @@ const Health = lazy(() => import('./components/home/Health'));
 const Schedule = lazy(() => import('./components/home/Schedule'));
 const Pricing = lazy(() => import('./components/home/Pricing'));
 const BMI = lazy(() => import('./components/home/BMI'));
-const Shop = lazy(() => import('./components/home/Shop'));
 const Testimonial = lazy(() => import('./components/home/Testimonial'));
 const Brand = lazy(() => import('./components/home/Brand'));
 const Footer = lazy(() => import('./components/common/Footer'));
@@ -49,7 +48,6 @@ const App: React.FC = () => {
         {Content.schedule.enabled && <Schedule />}
         {Content.pricing.enabled && <Pricing />}
         {Content.bmi.enabled && <BMI />}
-        {Content.shop.enabled && <Shop />}
         {Content.testimonials.enabled && <Testimonial />}
         {Content.brands.enabled && <Brand />}
         {Content.footer.enabled && <Footer />}
