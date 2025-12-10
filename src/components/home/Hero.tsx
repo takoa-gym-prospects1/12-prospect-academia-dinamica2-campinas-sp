@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
                     <HeroTitle
                         initial={{ opacity: 0, y: 30 }} /* Mudado para Y (subir) ja que é centralizado */
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                     >
                         {title.line1} <br />
                         <span>{title.highlight}</span>
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
                         <HeroSubtitle
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
                         >
                             {subtitle}
                         </HeroSubtitle>
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
                         className="btn btn-primary"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                         style={{
                             padding: '15px 40px',
                             fontSize: '16px',
@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
                     {microText && (
                         <MicroTextWrapper
                             initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             {microText.map((text: string, index: number) => (
                                 <span key={index}>{text}</span>
