@@ -76,7 +76,7 @@ const ServiceContent = styled.div`
 
     p {
         color: #ddd;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 20px;
         opacity: 0; /* Escondido inicialmente */
         transform: translateY(20px);

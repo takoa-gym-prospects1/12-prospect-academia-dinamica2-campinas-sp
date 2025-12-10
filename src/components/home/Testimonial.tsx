@@ -77,7 +77,7 @@ const ProfileInfo = styled.div`
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         color: var(--primary-color);
         margin: 0;
     }

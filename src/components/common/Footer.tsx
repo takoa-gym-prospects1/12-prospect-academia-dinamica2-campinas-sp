@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                                 <ContactInfo>
                                     {hours.map((h: string, i: number) => (
                                         <li key={i} style={{ marginBottom: '5px' }}>
-                                            <p style={{ fontSize: '13px', color: '#888' }}>{h}</p>
+                                            <p style={{ fontSize: '16px', color: '#888' }}>{h}</p>
                                         </li>
                                     ))}
                                 </ContactInfo>

@@ -91,7 +91,7 @@ const BenefitCard = styled.div`
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0;
         color: #ddd;
         line-height: 1.5;

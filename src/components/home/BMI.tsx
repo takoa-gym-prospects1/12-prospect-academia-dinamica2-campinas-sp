@@ -140,6 +140,7 @@ const Input = styled.input`
     border: 1px solid #333;
     color: #fff;
     border-radius: 4px;
+    font-size: 16px; /* Previne zoom no iOS */
 
     &:focus {
         border-color: var(--primary-color);

@@ -182,7 +182,7 @@ const Price = styled.div`
     }
 
     sub {
-        font-size: 14px;
+        font-size: 16px;
         color: #fff; /* Sub branco também */
         position: relative;
         bottom: 0;
@@ -194,7 +194,7 @@ const Features = styled.ul`
     flex-grow: 1;
 
     li {
-        font-size: 15px;
+        font-size: 16px;
         color: #fff; /* Texto branco */
         margin-bottom: 12px;
         list-style: none;
@@ -209,7 +209,7 @@ const Badge = styled.div`
     background: var(--primary-color);
     color: #fff;
     padding: 5px 15px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 20px;
@@ -219,7 +219,7 @@ const Badge = styled.div`
 
 const DiscountText = styled.p`
     color: #4cd137;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin: -20px 0 20px;
     text-transform: uppercase;

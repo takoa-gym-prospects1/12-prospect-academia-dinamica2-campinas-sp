@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.footer`
     background-color: #050505;
     color: #a0a0a0;
-    font-size: 14px;
+    font-size: 16px;
 `;
 
 export const FooterTop = styled.div`

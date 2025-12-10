@@ -46,12 +46,12 @@ export const TopBarWrapper = styled.div`
 
 export const TopBar = styled.div`
     padding: 10px 0;
-    font-size: 13px;
+    font-size: 16px;
     color: #ccc;
     @media (max-width: 991px) {
         padding: 5px 0;
         /* ALTERE AQUI: Tamanho da fonte do endereço no mobile */
-        font-size: 12px; 
+        font-size: 14px; 
         white-space: nowrap;
     }
 `;
@@ -86,7 +86,7 @@ export const ContactInfo = styled.div`
     }
 
     svg {
-        font-size: 14px;
+        font-size: 16px;
         color: var(--text-muted);
     }
 
@@ -286,7 +286,7 @@ export const IconWrapper = styled.a`
 `;
 
 export const LogoSubtitle = styled.span`
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-weight: 600;
     opacity: 0.8;
@@ -327,7 +327,7 @@ export const NavLink = styled.a`
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     letter-spacing: 0.5px;
     opacity: 0.8;
@@ -366,7 +366,7 @@ export const SkewBtnWrapper = styled.div<{ $white?: boolean }>`
         color: #000; 
         font-weight: 800;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
         align-items: center;
         gap: 8px; 

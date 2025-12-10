@@ -76,7 +76,7 @@ const Table = styled.table`
         color: #fff;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         padding: 20px;
     }
 
@@ -99,7 +99,7 @@ const ClassInfo = styled.div<{ $borderColor: string }>`
     }
 
     h3 {
-        font-size: 12px;
+        font-size: 16px;
         color: #aaa;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -113,13 +113,13 @@ const ClassInfo = styled.div<{ $borderColor: string }>`
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
         color: #888;
         margin-bottom: 5px;
     }
 
     span {
-        font-size: 12px;
+        font-size: 16px;
         color: var(--primary-color);
         font-weight: 600;
     }
