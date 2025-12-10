@@ -353,14 +353,15 @@ export const Content = {
         },
 
         hours: [
-            "Seg-Sex: 6h-22h",
-            "Sáb: 8h-14h",
-            "Dom: Fechado"
+            "Seg-Qui: 5h-23h",
+            "Sex: 5h-22h",
+            "Sab: 8h-13h e 16h-19h",
+            "Dom: 9h-12h"
         ],
 
         socials: {
-            instagram: "https://instagram.com/dinamicaacademia",
-            facebook: "https://facebook.com/dinamicaacademia",
+            instagram: "https://instagram.com/ctdinamica",
+            facebook: "https://facebook.com/academiadinamicacampinas",
             youtube: "https://youtube.com/dinamicaacademia"
         },
 
