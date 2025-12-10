@@ -67,6 +67,12 @@ const AssetImages = {
         brand3: { src: "/images/brand-3.webp", dim: "150x50 - Logo de parceiro" },
         brand4: { src: "/images/brand-4.webp", dim: "150x50 - Logo de parceiro" },
         brand5: { src: "/images/brand-5.webp", dim: "150x50 - Logo de parceiro" }
+    },
+    seo: {
+        preview: {
+            src: "/images/preview.webp",
+            dim: "1200x630 - Imagem de compartilhamento (Facebook/WhatsApp)"
+        }
     }
 };
 
@@ -92,7 +98,8 @@ export const Content = {
         title: "Dinâmica Academia - Sua melhor forma em 2026",
         description: "Academia completa em Campinas com musculação, aulas coletivas e acompanhamento personalizado. Comece sua transformação hoje!",
         keywords: "academia, fitness, musculação, crossfit, yoga, saúde, emagrecimento, campinas",
-        language: "pt-br"
+        language: "pt-br",
+        image: AssetImages.seo.preview.src
     },
 
     contact: {
