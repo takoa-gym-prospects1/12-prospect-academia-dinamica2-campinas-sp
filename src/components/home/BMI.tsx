@@ -35,7 +35,7 @@ const Overlay = styled.div`
      * 
      * O valor vai de 0.0 (transparente/sem escurecimento) até 1.0 (preto sólido)
      */
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 `;
 
