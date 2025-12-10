@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# Dinâmica Academia - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do site da **Dinâmica Academia**. Este projeto é uma Landing Page moderna, rápida e otimizada para conversão, desenvolvida com as melhores tecnologias web.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React + TypeScript:** Para uma interface robusta e sem erros.
+- **Vite:** Build tool extremamente rápido.
+- **Styled Components:** Estilização modular e livre de conflitos.
+- **Framer Motion:** Animações fluidas e elegantes.
 
-## React Compiler
+## 🛠️ Como Executar o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
-## Expanding the ESLint configuration
+1.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2.  **Rode o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+    O site estará disponível em `http://localhost:5173`.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+3.  **Para gerar a versão final (Build):**
+    ```bash
+    npm run build
+    ```
+    Os arquivos prontos para publicação estarão na pasta `dist`.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📝 Como Editar o Conteúdo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Todo o conteúdo de texto, links, telefones e configurações de imagens está centralizado em um único arquivo para facilitar a manutenção.
+
+**Arquivo:** `src/content/Content.ts`
+
+Neste arquivo, você encontrará seções como:
+- `contact`: Endereço, telefones e mensagens do WhatsApp.
+- `hero`: Títulos e imagens da seção principal.
+- `pricing`: Planos e preços.
+- `schedule`: Imagens e textos da seção de horários.
+- `seo`: Configurações para Google (Título, Descrição).
+
+**Exemplo de edição:**
+Para mudar o telefone do WhatsApp, procure por:
+```typescript
+contact: {
+    whatsapp: "(19) 99999-9999",
+    whatsappRaw: "5519999999999", // Apenas números
+    // ...
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📱 Imagens
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+As imagens estão localizadas na pasta `public/images`. Ao substituir uma imagem, mantenha o mesmo nome do arquivo ou atualize o caminho correspondente no `Content.ts`.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Desenvolvido por **TAKOA**.
