@@ -133,7 +133,7 @@ const Title = styled.h3`
 `;
 
 const Shop: React.FC = () => {
-    const { title, subtitle, products } = Content.shop;
+    const { title, subtitle, products } = Content.shop as any;
 
     return (
         <Section>

@@ -11,9 +11,7 @@ const Section = styled.section`
     padding: 0;
 `;
 
-const Helpers = styled.div`
-    width: 100%;
-`; // Just a wrapper if needed or use Fragment
+
 
 const Grid = styled(motion.div)`
     display: grid;
